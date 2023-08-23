@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "qr-app-test"
+client_id = "1be6b65413027532c21cc4239c58573d"
+application_url = "https://matching-executive-thailand-cache.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://matching-executive-thailand-cache.trycloudflare.com/auth/callback",
+  "https://matching-executive-thailand-cache.trycloudflare.com/auth/shopify/callback",
+  "https://matching-executive-thailand-cache.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quick-start-91be14c9.myshopify.com"
