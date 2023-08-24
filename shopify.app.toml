@@ -2,18 +2,18 @@
 
 name = "qr-app-test"
 client_id = "1be6b65413027532c21cc4239c58573d"
-application_url = "https://matching-executive-thailand-cache.trycloudflare.com"
+application_url = "https://animation-eden-favor-carrier.trycloudflare.com"
 embedded = true
 
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "write_products"
+scopes = "read_orders, read_products"
 
 [auth]
 redirect_urls = [
-  "https://matching-executive-thailand-cache.trycloudflare.com/auth/callback",
-  "https://matching-executive-thailand-cache.trycloudflare.com/auth/shopify/callback",
-  "https://matching-executive-thailand-cache.trycloudflare.com/api/auth/callback"
+  "https://animation-eden-favor-carrier.trycloudflare.com/auth/callback",
+  "https://animation-eden-favor-carrier.trycloudflare.com/auth/shopify/callback",
+  "https://animation-eden-favor-carrier.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
