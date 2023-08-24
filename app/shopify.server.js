@@ -19,11 +19,22 @@ const shopify = shopifyApp({
   authPathPrefix: "/auth",
   sessionStorage: new PrismaSessionStorage(prisma),
   distribution: AppDistribution.AppStore,
+  isEmbeddedApp: true,
   restResources,
   webhooks: {
     APP_UNINSTALLED: {
       deliveryMethod: DeliveryMethod.Http,
       callbackUrl: "/webhooks",
+    },
+    ORDERS_CREATE: {
+      deliveryMethod: DeliveryMethod.Http,
+      callbackUrl: "/webhooks",
+      callback: async (topic, shop, body, webhookId) => {
+        console.log("--- Product update ---");
+        const payload = JSON.parse(body);
+        console.log(payload);
+        console.log("--- /Product update ---");
+      },
     },
   },
   hooks: {

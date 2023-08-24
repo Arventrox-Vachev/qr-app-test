@@ -2,7 +2,7 @@
 
 name = "qr-app-test"
 client_id = "1be6b65413027532c21cc4239c58573d"
-application_url = "https://said-trade-coaches-bi.trycloudflare.com"
+application_url = "https://pushed-castle-vision-ui.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "read_orders, read_products"
 
 [auth]
 redirect_urls = [
-  "https://said-trade-coaches-bi.trycloudflare.com/auth/callback",
-  "https://said-trade-coaches-bi.trycloudflare.com/auth/shopify/callback",
-  "https://said-trade-coaches-bi.trycloudflare.com/api/auth/callback"
+  "https://pushed-castle-vision-ui.trycloudflare.com/auth/callback",
+  "https://pushed-castle-vision-ui.trycloudflare.com/auth/shopify/callback",
+  "https://pushed-castle-vision-ui.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
