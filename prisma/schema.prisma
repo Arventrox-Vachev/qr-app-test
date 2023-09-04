@@ -33,6 +33,3 @@ model QRCode {
   createdAt        DateTime @default(now())
 }
 
-model Order {
-  id                   BigInt      @id 
-}

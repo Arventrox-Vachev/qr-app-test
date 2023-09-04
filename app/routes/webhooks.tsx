@@ -19,7 +19,7 @@ export const action = async ({ request }) => {
       console.log(payload);
       if (payload) {
         const data = payload as _Order;
-        await db.order.create({ data: { id: data.id! } });
+        console.log(data);
       }
       break;
     case "CUSTOMERS_DATA_REQUEST":
