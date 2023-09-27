@@ -2,7 +2,7 @@
 
 name = "qr-app-test"
 client_id = "1be6b65413027532c21cc4239c58573d"
-application_url = "https://garcia-wow-na-shopper.trycloudflare.com"
+application_url = "https://defining-nutritional-madness-mesh.trycloudflare.com"
 embedded = true
 
 [access_scopes]
@@ -11,9 +11,9 @@ scopes = "read_orders, read_products"
 
 [auth]
 redirect_urls = [
-  "https://garcia-wow-na-shopper.trycloudflare.com/auth/callback",
-  "https://garcia-wow-na-shopper.trycloudflare.com/auth/shopify/callback",
-  "https://garcia-wow-na-shopper.trycloudflare.com/api/auth/callback"
+  "https://defining-nutritional-madness-mesh.trycloudflare.com/auth/callback",
+  "https://defining-nutritional-madness-mesh.trycloudflare.com/auth/shopify/callback",
+  "https://defining-nutritional-madness-mesh.trycloudflare.com/api/auth/callback"
 ]
 
 [webhooks]
