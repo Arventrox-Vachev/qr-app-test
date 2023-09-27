@@ -11,7 +11,6 @@ import {
   Text,
   Icon,
   HorizontalStack,
-  Box,
 } from "@shopify/polaris";
 
 import { getQRCodes } from "../models/QRCode.server";
@@ -119,11 +118,6 @@ export default function Index() {
             ) : (
               <QRTable qrCodes={qrCodes} />
             )}
-            <Thumbnail
-              source={qrCode.productImage || ImageMajor}
-              alt={qrCode.productTitle}
-              size="small"
-            />
           </Card>
         </Layout.Section>
       </Layout>
